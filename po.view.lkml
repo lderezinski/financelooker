@@ -3,17 +3,17 @@ view: po {
 
   dimension: accounting {
     type: string
-    sql: ${TABLE}.Accounting ;;
+    sql: ${TABLE}."Accounting" ;;
   }
 
   dimension: amount {
     type: number
-    sql: ${TABLE}.Amount ;;
+    sql: ${TABLE}."Amount" ;;
   }
 
   dimension: category {
     type: string
-    sql: ${TABLE}.Category ;;
+    sql: ${TABLE}."Category" ;;
   }
 
   dimension_group: enddate {
@@ -43,7 +43,7 @@ view: po {
 
   dimension: region {
     type: string
-    sql: ${TABLE}.Region ;;
+    sql: ${TABLE}."Region" ;;
   }
 
   dimension_group: startdate {

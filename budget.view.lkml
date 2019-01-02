@@ -3,22 +3,22 @@ view: budget {
 
   dimension: amount {
     type: number
-    sql: ${TABLE}.Amount ;;
+    sql: ${TABLE}."Amount" ;;
   }
 
   dimension: catagory {
     type: string
-    sql: ${TABLE}.Catagory ;;
+    sql: ${TABLE}."Catagory" ;;
   }
 
   dimension: region {
     type: string
-    sql: ${TABLE}.Region ;;
+    sql: ${TABLE}."Region" ;;
   }
 
   dimension: sub {
     type: string
-    sql: ${TABLE}.Sub ;;
+    sql: ${TABLE}."Sub" ;;
   }
 
   measure: count {
