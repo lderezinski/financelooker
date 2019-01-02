@@ -7,7 +7,7 @@ view: budget {
   }
   dimension: AmountMillions {
     type: number
-    sql: ${amount}/1000000 ;;
+    sql: ${amount}/1000000.0 ;;
     value_format:"$#.00;($#.00)"
   }
   dimension: catagory {
