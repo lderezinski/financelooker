@@ -5,7 +5,11 @@ view: budget {
     type: number
     sql: ${TABLE}."Amount" ;;
   }
-
+  dimension: AmountMillions {
+    type: number
+    sql: ${amount}/1000000 ;;
+    value_format:"$#.00;($#.00)"
+  }
   dimension: catagory {
     type: string
     sql: ${TABLE}."Catagory" ;;
@@ -33,9 +37,5 @@ view: budget {
     type:  sum
     sql:  ${amount};;
   }
-  measure: AmountMillions {
-    type: number
-    sql: ${amount}/1000000 ;;
-    value_format:"$#.00;($#.00)"
-  }
+
 }
