@@ -9,3 +9,21 @@ datagroup: finance_default_datagroup {
 }
 
 persist_with: finance_default_datagroup
+
+
+explore: budget {
+  description: "SPC Budget"
+  group_label: "Finance"
+  label: "Budget"
+  join: po {
+    type: full_outer
+    sql_on: ${po.region} = ${budget.region};;
+    relationship: one_to_many
+  }
+}
+
+explore: po {
+  description: "SPC approved POs"
+  group_label: "Finance"
+  label: "POs"
+}
