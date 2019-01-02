@@ -9,6 +9,8 @@ view: po {
   dimension: amount {
     type: number
     sql: ${TABLE}."Amount" ;;
+    value_format:"$#.00;($#.00)"
+
   }
 
   dimension: category {

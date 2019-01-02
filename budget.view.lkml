@@ -20,6 +20,10 @@ view: budget {
     type: string
     sql: ${TABLE}."Sub" ;;
   }
+  dimension: budgetyear {
+    type: number
+    sql: ${TABLE}.year ;;
+  }
 
   measure: count {
     type: count
@@ -28,5 +32,10 @@ view: budget {
   measure: total {
     type:  sum
     sql:  ${amount};;
+  }
+  measure: AmountMillions {
+    type: number
+    sql: ${amount}/1000000 ;;
+    value_format:"$#.00;($#.00)"
   }
 }
