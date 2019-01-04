@@ -30,6 +30,6 @@ explore: po {
 
 explore: dataloaded {
   description: "Finance Data loaded"
-  group_label: "Finance"
-  label: "Data loaded stats"
+  group_label: "Dataloaded"
+  label: "Finance stats"
 }
