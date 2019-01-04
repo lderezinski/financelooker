@@ -27,3 +27,9 @@ explore: po {
   group_label: "Finance"
   label: "POs"
 }
+
+explore: dataloaded {
+  description: "Finance Data loaded"
+  group_label: "Finance"
+  label: "Data loaded stats"
+}
